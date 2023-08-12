@@ -5,7 +5,7 @@ import {
   facebook,
   twitter,
   pinterest,
-  instagram
+  instagram,
 } from '../assets';
 
 export const navLinks = [
@@ -32,19 +32,22 @@ export const features = [
     id: 'snappy process',
     img: snappyProcess,
     title: 'Snappy Process',
-    content: 'Our application process can be completed in minutes, not hours. Don\'t get stuck filling in tedious forms.'
+    content:
+      'Our application process can be completed in minutes, not hours. Don\'t get stuck filling in tedious forms.',
   },
   {
     id: 'affordable prices',
     img: affordablePrices,
     title: 'Affordable Prices',
-    content: 'We don\'t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.'
+    content:
+      'We don\'t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.',
   },
   {
     id: 'people first',
     img: peopleFirst,
     title: 'People First',
-    content: 'Our plans aren\'t full of conditions and clauses to prevent payouts. We make sure you\'re covered when you need it.'
+    content:
+      'Our plans aren\'t full of conditions and clauses to prevent payouts. We make sure you\'re covered when you need it.',
   },
 ];
 
@@ -151,5 +154,5 @@ export const footerLinks = [
         link: '/',
       },
     ],
-  }
+  },
 ];
