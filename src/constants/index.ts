@@ -24,11 +24,6 @@ export const navLinks = [
     title: 'Account',
     href: '/',
   },
-  {
-    id: 'view plans',
-    title: 'View plans',
-    href: '/',
-  },
 ];
   
 export const features = [

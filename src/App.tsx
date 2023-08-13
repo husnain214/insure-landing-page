@@ -1,6 +1,6 @@
 import { Explore, Features, Footer, Hero, Navbar } from './components';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className="font-body min-h-screen">
       <Navbar />
