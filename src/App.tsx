@@ -1,16 +1,14 @@
-import { Navbar, Hero, Features, Explore, Footer } from './components';
+import { Explore, Features, Footer, Hero, Navbar } from './components';
 
 const App = () => {
-  return(
-    <>
+  return (
+    <div className="font-body min-h-screen">
       <Navbar />
-      <main> 
-        <Hero />
-        <Features />
-        <Explore />
-      </main>
+      <Hero />
+      <Features />
+      <Explore />
       <Footer />
-    </>
+    </div>
   );
 };
 

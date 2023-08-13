@@ -5,4 +5,3 @@ import Explore from './Explore';
 import Footer from './Footer';
 
 export { Navbar, Hero, Features, Explore, Footer };
-
