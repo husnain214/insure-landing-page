@@ -54,27 +54,32 @@ export const socialMedia = [
   {
     id: 'social-media-2',
     icon: facebook,
+    name: 'facebook',
     link: 'https://www.facebook.com/',
   },
   {
     id: 'social-media-3',
     icon: twitter,
+    name: 'twitter',
     link: 'https://www.twitter.com/',
   },
   {
     id: 'social-media-4',
     icon: pinterest,
+    name: 'pinterest',
     link: 'https://www.pinterest.com/',
   },
   {
     id: 'social-media-1',
     icon: instagram,
+    name: 'instagram',
     link: 'https://www.instagram.com/',
   },
 ];
   
 export const footerLinks = [
   {
+    id: 'our company',
     title: 'Our company',
     links: [
       {
@@ -96,6 +101,7 @@ export const footerLinks = [
     ],
   },
   {
+    id: 'help me',
     title: 'Help me',
     links: [
       {
@@ -117,6 +123,7 @@ export const footerLinks = [
     ],
   },
   {
+    id: 'contact',
     title: 'Contact',
     links: [
       {
@@ -134,6 +141,7 @@ export const footerLinks = [
     ],
   },
   {
+    id: 'others',
     title: 'Others',
     links: [
       {

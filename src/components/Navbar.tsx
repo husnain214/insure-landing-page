@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { hamburger, logo } from '../assets';
+import { close, hamburger, logo } from '../assets';
 import { navLinks } from '../constants';
-import { styles } from '../style';
 import CtaButton from './CtaButton';
 
 const Navbar: React.FC = () => {
@@ -9,9 +8,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="uppercase">
-      <nav
-        className={`${styles.container} py-[30px] flex items-center justify-between relative text-xl md:text-sm`}
-      >
+      <nav className="container mx-auto py-[30px] flex items-center justify-between relative text-xl md:text-sm">
         <a href="/">
           <img
             className="max-w-max"
@@ -28,7 +25,10 @@ const Navbar: React.FC = () => {
           className="md:hidden"
           onClick={() => setNavToggle((prev) => !prev)}
         >
-          <img src={hamburger} alt="hamburger icon" />
+          <img
+            src={!navToggle ? hamburger : close}
+            alt={!navToggle ? 'hamburger icon' : 'close icon'}
+          />
           <span className="sr-only">main menu</span>
         </button>
 
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           id="primary-navigation"
           className={`pt-20 md:pt-0 flex flex-col md:flex-row justify-start md:justify-between items-center gap-7 fixed md:static top-24 left-0 right-0 bottom-0 bg-neutral-dark md:bg-transparent ${
             navToggle ? 'visible' : 'invisible'
-          } w-full md:w-auto md:visible overflow-hidden transition-transform duration-300`}
+          } w-full md:w-auto md:visible overflow-hidden transition-transform duration-300 z-50`}
         >
           {navLinks.map(({ id, title, href }) => (
             <li
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
             </li>
           ))}
 
-          <CtaButton />
+          <CtaButton variant="nav" />
         </ul>
       </nav>
     </header>
