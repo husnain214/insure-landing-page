@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="uppercase px-5">
-      <nav className="container w-full max-w-6xl mx-auto py-[20px] flex items-center justify-between relative text-xl md:text-sm">
+      <nav className="container w-full max-w-6xl mx-auto py-[20px] flex items-center justify-between relative text-xl md:text-sm tracking-[1.5px]">
         <a href="/">
           <img
             className="max-w-max"

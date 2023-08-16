@@ -4,7 +4,7 @@ const CtaButton = ({ variant = 'normal', title = 'view plans' }) => {
   return (
     <a
       href="/"
-      className={`px-[28px] py-[12px] border-2 border-white text-white hover:text-neutral-dark ${
+      className={`tracking-[1.5px] px-[28px] py-[10px] border-2 border-white text-white hover:text-neutral-dark ${
         variant === 'nav'
           ? 'md:text-neutral-dark md:hover:text-neutral-light md:border-neutral-dark md:before:bg-neutral-dark'
           : ''
