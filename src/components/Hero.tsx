@@ -10,7 +10,7 @@ import CtaButton from './CtaButton';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-primary md:px-5 relative text-white min-h-[100vh] grid place-content-center md:py-32 isolate">
+    <section className="bg-primary md:px-5 relative text-white grid place-content-center md:py-20 isolate">
       <picture>
         <source srcSet={introRightPatternMobile} media="(max-width: 768px)" />
         <img
