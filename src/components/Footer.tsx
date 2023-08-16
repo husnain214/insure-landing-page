@@ -54,6 +54,23 @@ const Footer = () => {
           ))}
         </nav>
       </div>
+
+      <div className="text-center normal-case mt-5 text-sm">
+        Challenge by{' '}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+          className="text-accent"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{' '}
+        <a className="text-accent" href="#">
+          Husnain Zahid
+        </a>
+        .
+      </div>
     </footer>
   );
 };

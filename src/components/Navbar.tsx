@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           id="primary-navigation"
           className={`pt-20 md:pt-0 flex flex-col md:flex-row justify-start md:justify-between items-center gap-7 fixed md:static top-[11%] left-0 right-0 bottom-0 bg-neutral-dark md:bg-transparent ${
             navToggle ? 'visible opacity-100' : 'invisible opacity-0'
-          } w-full md:w-auto md:visible overflow-hidden transition-all duration-300 z-50 isolate`}
+          } w-full md:opacity-100 md:w-auto md:visible overflow-hidden transition-all md:transition-none duration-300 z-50 isolate`}
         >
           <img
             src={navPattern}
