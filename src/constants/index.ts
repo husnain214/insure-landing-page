@@ -2,10 +2,10 @@ import {
   snappyProcess,
   peopleFirst,
   affordablePrices,
-  facebook,
-  twitter,
-  pinterest,
-  instagram,
+  Facebook,
+  Twitter,
+  Pinterest,
+  Instagram,
 } from '../assets';
   
 export const navLinks = [
@@ -53,25 +53,25 @@ export const features = [
 export const socialMedia = [
   {
     id: 'social-media-2',
-    icon: facebook,
+    Icon: Facebook,
     name: 'facebook',
     link: 'https://www.facebook.com/',
   },
   {
     id: 'social-media-3',
-    icon: twitter,
+    Icon: Twitter,
     name: 'twitter',
     link: 'https://www.twitter.com/',
   },
   {
     id: 'social-media-4',
-    icon: pinterest,
+    Icon: Pinterest,
     name: 'pinterest',
     link: 'https://www.pinterest.com/',
   },
   {
     id: 'social-media-1',
-    icon: instagram,
+    Icon: Instagram,
     name: 'instagram',
     link: 'https://www.instagram.com/',
   },

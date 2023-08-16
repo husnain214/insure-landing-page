@@ -1,10 +1,15 @@
-import { logo } from '../assets';
+import { footerPatternDesktop, footerPatternMobile, logo } from '../assets';
 import { footerLinks, socialMedia } from '../constants';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-light mt-[150px] py-16 uppercase">
-      <div className="container mx-auto">
+    <footer className="bg-neutral-light mt-[150px] px-5 py-16 uppercase relative isolate">
+      <picture className="absolute left-0 top-0 -z-[1]">
+        <source srcSet={footerPatternMobile} media="(max-width: 70em)" />
+        <img src={footerPatternDesktop} alt="pattern" aria-hidden="true" />
+      </picture>
+
+      <div className="container w-full max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0 mb-10 pb-10 border-b-[1px] border-gray-300">
           <a href="/">
             <img
@@ -17,11 +22,11 @@ const Footer = () => {
           </a>
 
           <ul className="flex justify-between items-center gap-5">
-            {socialMedia.map(({ id, link, name, icon }) => (
+            {socialMedia.map(({ id, link, name, Icon }) => (
               <li key={id}>
                 <a href={link}>
                   <span className="sr-only">{name}</span>
-                  <img src={icon} alt={name} />
+                  <Icon className="text-neutral-gray hover:text-black transition-all duration-300" />
                 </a>
               </li>
             ))}

@@ -15,10 +15,10 @@ import imageIntroMobile from './image-intro-mobile.jpg';
 import snappyProcess from './icon-snappy-process.svg';
 import peopleFirst from './icon-people-first.svg';
 import affordablePrices from './icon-affordable-prices.svg';
-import facebook from './icon-facebook.svg';
-import twitter from './icon-twitter.svg';
-import pinterest from './icon-pinterest.svg';
-import instagram from './icon-instagram.svg';
+import { ReactComponent as Facebook } from './icon-facebook.svg';
+import { ReactComponent as Twitter } from './icon-twitter.svg';
+import { ReactComponent as Pinterest } from './icon-pinterest.svg';
+import { ReactComponent as Instagram } from './icon-instagram.svg';
 
 export {
   footerPatternDesktop,
@@ -38,8 +38,8 @@ export {
   snappyProcess,
   peopleFirst,
   affordablePrices,
-  facebook,
-  twitter,
-  pinterest,
-  instagram,
+  Facebook,
+  Twitter,
+  Pinterest,
+  Instagram,
 };

@@ -1,14 +1,18 @@
 import { useState } from 'react';
-import { close, hamburger, logo } from '../assets';
+import { close, hamburger, logo, navPattern } from '../assets';
 import { navLinks } from '../constants';
 import CtaButton from './CtaButton';
 
 const Navbar: React.FC = () => {
   const [navToggle, setNavToggle] = useState<boolean>(false);
 
+  document.documentElement.style.overflow = navToggle
+    ? 'hidden'
+    : 'hidden scroll';
+
   return (
-    <header className="uppercase">
-      <nav className="container mx-auto py-[30px] flex items-center justify-between relative text-xl md:text-sm">
+    <header className="uppercase px-5">
+      <nav className="container w-full max-w-6xl mx-auto py-[20px] flex items-center justify-between relative text-xl md:text-sm">
         <a href="/">
           <img
             className="max-w-max"
@@ -34,10 +38,17 @@ const Navbar: React.FC = () => {
 
         <ul
           id="primary-navigation"
-          className={`pt-20 md:pt-0 flex flex-col md:flex-row justify-start md:justify-between items-center gap-7 fixed md:static top-24 left-0 right-0 bottom-0 bg-neutral-dark md:bg-transparent ${
-            navToggle ? 'visible' : 'invisible'
-          } w-full md:w-auto md:visible overflow-hidden transition-transform duration-300 z-50`}
+          className={`pt-20 md:pt-0 flex flex-col md:flex-row justify-start md:justify-between items-center gap-7 fixed md:static top-[11%] left-0 right-0 bottom-0 bg-neutral-dark md:bg-transparent ${
+            navToggle ? 'visible opacity-100' : 'invisible opacity-0'
+          } w-full md:w-auto md:visible overflow-hidden transition-all duration-300 z-50 isolate`}
         >
+          <img
+            src={navPattern}
+            className="absolute -bottom-[5em] right-0 left-0 object-cover w-full -z-[-1] md:hidden"
+            alt="pattern"
+            aria-hidden="true"
+          />
+
           {navLinks.map(({ id, title, href }) => (
             <li
               key={id}
